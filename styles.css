@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #444444;
+}
+
+header {
+    background: url('forest-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F5F2E7;
+}
+
+.hero-content h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 3rem;
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.cta-button {
+    background: #2C5F2D;
+    color: #F5F2E7;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #4A90E2;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-item {
+    background: #F5F2E7;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #8C5E3C;
+    color: #F5F2E7;
+    padding: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #2C5F2D;
+    color: #F5F2E7;
+    text-align: center;
+    padding: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #444444;
+    border-radius: 5px;
+}
+
+form button {
+    background: #4A90E2;
+    color: #F5F2E7;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #2C5F2D;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #4A90E2;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+}
